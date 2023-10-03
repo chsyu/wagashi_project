@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+/* font */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* title */
+h1 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 35px;
+    color:#fff;
+
+}
+
+/* subtitle */
+h3 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+
+
+}
+
+.h3-spring {
+    color:#A63030;
+}
+.h3-summer {
+    color: #216c76;
+}
+.h3-fall {
+    color:#a65930;
+}
+.h3-winter {
+    color: #572176;
+}
+
+p {
+    font-size: 10px;
+    line-height: 10px;
+    display: inline;
+    justify-content: center;
+    /* border: solid 1px black; */
+
+    
+}
+
+/* 架構*/
+.container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.container-spring {
+    background-color: #fdaeb1;
+}
+.container-summer {
+    background-color: #aee3db;
+}
+.container-fall {
+    background-color: #f1be62;
+}
+.container-winter {
+    background-color: #c4c6ec;
+}
+
+
+
+
+
+/* 要壓底紋圖的區塊 */
+.content-area {
+    width: 1100px;
+    height: 660px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    outline: solid 1px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-area-spring {
+    background-color: #ea9396;
+}
+
+.content-area-summer {
+    background-color: #84c9be;
+}
+.content-area-fall {
+    background-color: #ebb080;
+}
+.content-area-winter {
+    background-color: #dfcaf4;
+}
+
+
+
+
+/* btn */
+.btn {
+    position: fixed;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    outline: solid 1px black;
+
+}
+.btn_back {
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 10px;
+
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+
+}
+.btn_back:hover {
+    margin-top: 25px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(0px 10px 5px rgba(147, 147, 147, 0.5));
+}
+
+
+.btn_hamburger {
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 10px;
+
+    transition: margin-top 0.5s, filter 0.5s; 
+}
+
+.btn_hamburger:hover {
+    margin-top: 25px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(0px 10px 5px rgba(147, 147, 147, 0.5));
+}
+
+/* 內容 */
+/* 季節說明文字區塊 */
+.introduction-area {
+    position: absolute;
+    /* position: relative; */
+    /* outline: solid 1px black; */
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /*搭配display:flex可將物件垂直置中*/
+    margin-top: -50px;
+
+
+}
+.introduction-content {
+    text-align: center;
+    vertical-align: middle;
+    color: #472A18;
+    background-color: rgba(249,248,227,0.8);
+    border-radius: 20px;
+    padding:5px;
+    padding-bottom: 8px;
+    display: inline-block;
+    /* justify-content: center;
+    align-items: center; */
+    
+    /* flex-direction: column; */
+    
+    
+
+    
+}
+
+/* 和菓子區塊 */
+.wagashi-area {
+    position: absolute;
+    display: flex;
+    /* outline: solid 1px red; */
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.wagashi-area_line1 {
+    position: absolute;
+    display: inline;
+    width: 500px;
+    height: 200px;
+    /* outline: solid 1px blue; */
+    /* align-items: center;
+    text-align: center; */
+    /* flex-direction: column; */
+    margin-bottom: 360px;
+    
+}
+.wagashi-area_line2 {
+    position: absolute;
+    display: inline;
+    width: 1000px;
+    height: 200px;
+    /* outline: solid 1px blue; */
+    /* align-items: center;
+    justify-content: center; */
+    
+    
+    
+}
+
+.wagashi-area_line3 {
+    position: absolute;
+    display: inline;
+    width: 500px;
+    height: 200px;
+    /* outline: solid 1px blue; */
+    margin-top: 380px;
+
+
+}
+
+/* 圖片 */
+/* .image{
+
+} */
+.image_wagashi_spring {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 0; /* 添加初始的 margin-top 值 */
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+ 
+
+}
+.image_wagashi_spring:hover {
+    margin-top: -10px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+}
+.image_wagashi_summer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 0; /* 添加初始的 margin-top 值 */
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+
+
+}
+.image_wagashi_summer:hover {
+    margin-top: -10px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(5px 10px 5px rgba(34, 112, 119, 0.5));
+}
+.image_wagashi_fall {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 0; /* 添加初始的 margin-top 值 */
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+
+
+}
+.image_wagashi_fall:hover {
+    margin-top: -10px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(5px 10px 5px rgba(119, 62, 34, 0.5));
+}
+.image_wagashi_winter {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 0; /* 添加初始的 margin-top 值 */
+
+    transition: margin-top 0.5s, filter 0.5s; /* 添加過渡效果屬性 */
+
+
+}
+.image_wagashi_winter:hover {
+    margin-top: -10px;
+    transition:all 0.5s;
+    /* opacity: 80%; */
+    filter: drop-shadow(5px 10px 5px rgba(88, 34, 119, 0.5));
+}
+.image_wagashi_i1 {
+
+}
+.image_wagashi_i2 {
+    right: 0;
+    float: right;
+}
+.image_wagashi_i3 {
+    left: 0;
+}
+.image_wagashi_i4 {
+    right: 0;
+    float: right; /*讓物件靠右*/
+
+}
+.image_wagashi_i5 {
+    
+}
+.image_wagashi_i6 {
+    right: 0;
+    float: right;
+}
+
+
+/* 動畫 */
+.fade-in {
+    opacity: 1; /* 透明度从 1 变为 0，实现淡出效果 */
+    transform: translateY(0px); /* 同时向上平移一点，增加动画效果 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* 过渡属性和时长 */
+}
+
+
+
+
+
+/* popup */
+.popup {
+    /* display: none; */
+    top: 0;
+    margin-top: 130px;
+    left: 0;
+    position: absolute;
+    min-width: 100vw;
+    min-height: 400px;
+    outline: solid 1px red;
+    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+    
+
+}
+
+.popup_spring {
+    background-color: #9D2929;
+
+}
+
+.popup_contentarea {
+    margin-top: 25px;
+    min-width: 100vw;
+    min-height: 350px;
+    background-color: #FFDEDE;
+}
