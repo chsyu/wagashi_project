@@ -35,3 +35,24 @@ function navigateToWinterPage() {
         window.location.href = "winter.html";
     }, 500); // 500 毫秒是过渡效果的时间
 }
+
+let openingAnimWindow = document.querySelector("#spring")
+let openingAnimData = {
+    container: openingAnimWindow,
+    animType:"svg",
+    loop: true,
+    prerender: true,
+    autoplay: true,
+    path: 'json/spring.json'
+};
+let openingsummerWindow = document.querySelector("#summer")
+let openingsummerData = {
+    container: openingsummerWindow,
+    animType:"svg",
+    loop: true,
+    prerender: true,
+    autoplay: true,
+    path: 'json/summer.json'
+};
+let openingAnim = bodymovin.loadAnimation(openingAnimData);
+let openingsummerAnim = bodymovin.loadAnimation(openingsummerData);
