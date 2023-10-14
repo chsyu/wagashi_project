@@ -4,7 +4,8 @@ function navigateToSpringPage() {
 
     // 在过渡结束后，页面导航到 spring.html
     setTimeout(function() {
-        window.location.href = "spring.html";
+        // window.location.href = "spring.html";
+        window.open("spring.html", "_blank");
     }, 500); // 500 毫秒是过渡效果的时间
 }
 function navigateToFallPage() {
@@ -13,7 +14,8 @@ function navigateToFallPage() {
 
     // 在过渡结束后，页面导航到 fall.html
     setTimeout(function() {
-        window.location.href = "fall.html";
+        // window.location.href = "fall.html";
+        window.open("fall.html", "_blank");
     }, 500); // 500 毫秒是过渡效果的时间
 }
 
@@ -23,7 +25,8 @@ function navigateToSummerPage() {
 
     // 在过渡结束后，页面导航到 summer.html
     setTimeout(function() {
-        window.location.href = "summer.html";
+        // window.location.href = "summer.html";
+        window.open("summer.html", "_blank");
     }, 500); // 500 毫秒是过渡效果的时间
 }
 function navigateToWinterPage() {
@@ -32,7 +35,8 @@ function navigateToWinterPage() {
 
     // 在过渡结束后，页面导航到 winter.html
     setTimeout(function() {
-        window.location.href = "winter.html";
+        // window.location.href = "winter.html";
+        window.open("winter.html", "_blank");
     }, 500); // 500 毫秒是过渡效果的时间
 }
 
