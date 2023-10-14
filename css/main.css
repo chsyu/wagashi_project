@@ -206,9 +206,9 @@ a:active {
     /* position: absolute; */
     position: relative; /*為了使用flex,父容器要設posr，才能用置中語法*/
     display: flex;
-    width: 750px;
-    height: 600px;
-    outline: solid 1px black;
+    width: 700px;
+    height: 599px;
+    /* outline: solid 1px black; */
     /* background-color: #805a3e; */
     align-items: center;
     /* justify-content: center; */
@@ -243,11 +243,11 @@ a:active {
     margin-bottom: 1%; */
     /* width: 47%;
     height: 94%; */
-    flex-grow: 1;
-    margin-left: 2%;
+    flex: 1;
+    /* margin-left: 2%;
     margin-right: 1%;
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 1%; */
 
     background-color: #fdaeb1;
     /* outline: solid 1px blue; */
@@ -261,7 +261,8 @@ a:active {
     transition:all 0.5s;
     /* opacity: 80%; */
     background-color: #e98387;
-    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+    /* filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5)); */
+    filter: brightness(80%);
 }
 
 
@@ -276,11 +277,11 @@ a:active {
     margin-bottom: 1%; */
     /* width: 47%;
     height: 94%; */
-    flex-grow: 1;
-    margin-left: 1%;
+    flex: 1;
+    /* margin-left: 1%;
     margin-right: 2%;
     margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 1%; */
 
     background-color: #f1be62;
 
@@ -290,7 +291,8 @@ a:active {
     transition:all 0.5s;
     /* opacity: 80%; */
     background-color: rgb(198, 136, 75);
-    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+    /* filter: drop-shadow(5px 5px 5px rgba(171, 76, 76, 0.5)); */
+    filter: brightness(80%);
 }
 
 
@@ -307,11 +309,11 @@ a:active {
     margin-bottom: 1%; */
     /* width: 47%;
     height: 94%; */
-    flex-grow: 1;
-    margin-left: 2%;
+    flex: 1;
+    /* margin-left: 2%;
     margin-right: 1%;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 2%; */
 
     background-color: #aee3db;
 
@@ -321,7 +323,10 @@ a:active {
     transition:all 0.5s;
     /* opacity: 80%; */
     background-color: rgb(59, 176, 176);
-    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+    /* filter: drop-shadow(5px 5px 5px rgba(171, 76, 76, 0.5)); */
+    filter: brightness(80%);
+    scale: 99%;
+    
 }
 
 
@@ -329,11 +334,11 @@ a:active {
 
 .winter {
     position: relative;
-    flex-grow: 1;
-    margin-left: 1%;
+    flex: 1;
+    /* margin-left: 1%;
     margin-right: 2%;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 2%; */
 
     background-color: #c4c6ec;
 
@@ -343,7 +348,8 @@ a:active {
     transition:all 0.5s;
     /* opacity: 80%; */
     background-color: #b196ef;
-    filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
+    /* filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5)); */
+    filter: brightness(80%);
 }
 
 
@@ -351,11 +357,11 @@ a:active {
 
 /* 便當盒底部那條繪圖 */
 .lunchbox-bottom {
-    width: 750px;
-    height: 5%;
+    width: 700px;
+    height: 3%;
     margin-top: 1%;
     /* outline: solid 1px blue; */
-    background-color: #805a3e;
+    background-color: #5f3e28;
     
 
 

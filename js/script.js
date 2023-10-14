@@ -35,24 +35,74 @@ function navigateToWinterPage() {
         window.location.href = "winter.html";
     }, 500); // 500 毫秒是过渡效果的时间
 }
+$(document).ready(function () {
+
+
 
 let openingAnimWindow = document.querySelector("#spring")
 let openingAnimData = {
     container: openingAnimWindow,
     animType:"svg",
-    loop: true,
+    loop: false,
     prerender: true,
-    autoplay: true,
+    autoplay: false,
     path: 'json/spring.json'
 };
 let openingsummerWindow = document.querySelector("#summer")
 let openingsummerData = {
     container: openingsummerWindow,
     animType:"svg",
-    loop: true,
+    loop: false,
     prerender: true,
-    autoplay: true,
+    autoplay: false,
     path: 'json/summer.json'
+};
+let openingfallWindow = document.querySelector("#fall")
+let openingfallData = {
+    container: openingfallWindow,
+    animType:"svg",
+    loop: false,
+    prerender: true,
+    autoplay: false,
+    path: 'json/fall.json'
+};
+let openingwinterWindow = document.querySelector("#winter")
+let openingwinterData = {
+    container: openingwinterWindow,
+    animType:"svg",
+    loop: false,
+    prerender: true,
+    autoplay: false,
+    path: 'json/winter.json'
 };
 let openingAnim = bodymovin.loadAnimation(openingAnimData);
 let openingsummerAnim = bodymovin.loadAnimation(openingsummerData);
+let openingfallAnim = bodymovin.loadAnimation(openingfallData);
+let openingwinterAnim = bodymovin.loadAnimation(openingwinterData);
+
+$('#spring').on('mouseenter',function () {
+    openingAnim.stop();
+    openingAnim.play();
+}).on('mouseleave',function () {
+    openingAnim.pause();
+});
+$('#summer').on('mouseenter',function () {
+    openingsummerAnim.stop();
+    openingsummerAnim.play();
+}).on('mouseleave',function () {
+    openingsummerAnim.pause();
+});
+$('#fall').on('mouseenter',function () {
+    openingfallAnim.stop();
+    openingfallAnim.play();
+}).on('mouseleave',function () {
+    openingfallAnim.pause();
+});
+$('#winter').on('mouseenter',function () {
+    openingwinterAnim.stop();
+    openingwinterAnim.play();
+}).on('mouseleave',function () {
+    openingwinterAnim.pause();
+});
+
+});
