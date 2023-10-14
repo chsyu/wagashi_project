@@ -125,15 +125,15 @@ menu_icon.onclick = function(){
         
     }
 };
-let click =true;
-gasp.registerPlugin(Flip);
-const menubottomrect = $("#menubottomrect");
-$(document).click(function(e)) {
-    const state = Flip.getState("#menubottomrect");
-    if(click) {
-        
-    }
-}
+// let click =true;
+// gasp.registerPlugin(Flip);
+// const menubottomrect = $("#menubottomrect");
+// $(document).click(function(e)) {
+//     const state = Flip.getState("#menubottomrect");
+//     if(click) {
+
+//     }
+// }
 
 
 
