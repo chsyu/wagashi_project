@@ -35,6 +35,8 @@ function navigateToWinterPage() {
         window.location.href = "winter.html";
     }, 500); // 500 毫秒是过渡效果的时间
 }
+
+// four seasons animation
 $(document).ready(function () {
 
 
@@ -106,3 +108,37 @@ $('#winter').on('mouseenter',function () {
 });
 
 });
+
+// menu animation
+let menu_windowcontent = document.querySelector('#menu_windowcontent');
+let menu_icon = document.querySelector('#menu_icon');
+// let link1 = document.querySelector('#link1');
+// let link2 = document.querySelector('#link2');
+// let link3 = document.querySelector('#link3');
+// let link4 = document.querySelector('#link4');
+menu_icon.onclick = function(){
+    if(menu_windowcontent.style.display=='none'){
+        menu_windowcontent.style.display='block';
+       
+    }else{
+        menu_windowcontent.style.display='none';
+        
+    }
+};
+let click =true;
+gasp.registerPlugin(Flip);
+const menubottomrect = $("#menubottomrect");
+$(document).click(function(e)) {
+    const state = Flip.getState("#menubottomrect");
+    if(click) {
+        
+    }
+}
+
+
+
+gasp.fromTo('menubottomrect',1,{},{})
+
+
+// 先執行完展開，再visible
+

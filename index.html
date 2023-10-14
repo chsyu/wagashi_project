@@ -40,27 +40,33 @@
             </div>
             <div class="menu">
                 <div class="menu menu_iconarea">
-                    <div class="btn btn_hamburger">選單icon</div>
+                    <div id="menu_icon" class="btn btn_hamburger">選單icon(展開)</div>
                 </div>
                 <!-- <div>/*選單點開視窗*/</div> -->
                 <div class="menu menu_window">
-                    <div id="menu" class="menu_windowcontent">
-                        
-                        <div class="pagelink">
+                    <div id="menu_windowcontent" class="menu_windowcontent">
+                        <div id="link1" class="pagelink">
                             <a href="main.html">四季菓子</a>
                         </div>
-                        <div class="pagelink">
+                        <div id="link2" class="pagelink">
                             <a href="jargon.html" target="_blank">專業名詞解說</a>
                         </div>
-                        <div class="pagelink">
+                        <div id="link3" class="pagelink">
                             <a href="otherwagashi.html" target="_blank">其他菓子介紹</a>
                         </div>
-                        <div class="pagelink">
+                        <div id="link4" class="pagelink">
                             <a href="wagashimaking.html" target="_blank">菓子靈製作</a>
                         </div>
+                        
 
                     </div>
+                    <div id="menubottomrect" class="menubottomrect">
+                        <div class="btn btn_hamburger">卷軸尾端</div>
+                    </div>
+                    
+                    
                 </div>
+                
                 
 
             </div>
@@ -73,7 +79,9 @@
 
 
     </div>
-    <script src="js/gsap.min.js" charset="UTF-8"></script>
+    <script src="js/vendor/gsap.min.js" charset="UTF-8"></script>
     <script src="js/script.js" charset="UTF-8"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/Flip.min.js"></script>
 </body>
 </html>
