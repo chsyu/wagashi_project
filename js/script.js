@@ -111,20 +111,30 @@ $('#winter').on('mouseenter',function () {
 
 // menu animation
 let menu_windowcontent = document.querySelector('#menu_windowcontent');
-let menu_icon = document.querySelector('#menu_icon');
+let menubottomrect = document.querySelector('#menubottomrect');
 // let link1 = document.querySelector('#link1');
 // let link2 = document.querySelector('#link2');
 // let link3 = document.querySelector('#link3');
 // let link4 = document.querySelector('#link4');
-menu_icon.onclick = function(){
-    if(menu_windowcontent.style.display=='none'){
-        menu_windowcontent.style.display='block';
-       
+let clickstate = 0;
+menubottomrect.onclick = function(){
+    if(clickstate == 0) {
+        gsap.fromTo("#menubottomrect",1,{y:0},{y:400});
+        clickstate = 1; 
     }else{
-        menu_windowcontent.style.display='none';
-        
+        gsap.fromTo("#menubottomrect",1,{y:400},{y:0});
+        clickstate = 0; 
     }
+    // if(menu_windowcontent.style.display=='none'){
+    //     menu_windowcontent.style.display='block';
+       
+    // }else{
+    //     menu_windowcontent.style.display='none';
+        
+    // }
 };
+
+
 // let click =true;
 // gasp.registerPlugin(Flip);
 // const menubottomrect = $("#menubottomrect");
@@ -139,7 +149,8 @@ menu_icon.onclick = function(){
 
 
 
-gasp.fromTo('menubottomrect',1,{},{})
+// gasp.fromTo('menubottomrect',1,{},{})
+
 
 
 // 先執行完展開，再visible

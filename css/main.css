@@ -128,14 +128,15 @@ h6 {
     /* margin: 20px 0px; */
     padding: 20px 0px;
     height: 300px;
-    outline: solid 1px blue;
-    background-color: #fff;
+    /* outline: solid 1px blue; */
+    /* background-color: #fff; */
     /* display: inline; */
     /* flex: 1; */
     /* padding-top: 50px; */
     /* padding-bottom: 150px; */
     /* visibility: collapse; */
-    display: none;
+    /* display: none; */
+    display: block;
     transition: all 5s ease-in;
     
     
@@ -146,9 +147,11 @@ h6 {
 
 
 .menubottomrect {
+    position: absolute;
     width: 150px;
     margin: 0;
-    height: 300px;
+    top: 20px;
+    height: 400px;
     background-color: #e0bdb6;
 
 }
@@ -165,7 +168,7 @@ h6 {
 
     font-size: 20px;
     line-height: 60px;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     text-align: center;
     /* display: none; */
 
@@ -247,7 +250,7 @@ a:active {
     width: 100%;
     height: 47%;
     /* outline: solid 1px black; */
-    background-color: #805a3e;
+    background-color: #5f3e28;
 
     display: flex;
 
@@ -257,7 +260,7 @@ a:active {
     height: 47%;
     
     /* outline: solid 1px black; */
-    background-color: #805a3e;
+    background-color: #5f3e28;
 
     display: flex;
 
