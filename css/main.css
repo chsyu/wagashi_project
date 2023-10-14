@@ -289,7 +289,7 @@ a:active {
     /* opacity: 80%; */
     background-color: #e98387;
     /* filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5)); */
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
 }
 
 
@@ -319,7 +319,7 @@ a:active {
     /* opacity: 80%; */
     background-color: rgb(198, 136, 75);
     /* filter: drop-shadow(5px 5px 5px rgba(171, 76, 76, 0.5)); */
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
 }
 
 
@@ -351,7 +351,7 @@ a:active {
     /* opacity: 80%; */
     background-color: rgb(59, 176, 176);
     /* filter: drop-shadow(5px 5px 5px rgba(171, 76, 76, 0.5)); */
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
     scale: 99%;
     
 }
@@ -376,7 +376,7 @@ a:active {
     /* opacity: 80%; */
     background-color: #b196ef;
     /* filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5)); */
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
 }
 
 
