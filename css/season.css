@@ -1,4 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: SweiGothicLegCJKtc-Regular;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Regular.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: SweiGothicLegCJKtc-DemiLight;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-DemiLight.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-DemiLight.woff) format("woff");
+  }
+@font-face {
+    font-family: SweiGothicLegCJKtc-Medium;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Medium.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: SweiGothicLegCJKtc-Bold;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Bold.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Bold.woff) format("woff");
+  }
+@font-face {
+    font-family: SweiGothicLegCJKtc-Black;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Blcak.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Black.woff) format("woff");
+}
+@font-face {
+    font-family: SweiGothicLegCJKtc-Light;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff) format("woff");
+  }
+  @font-face {
+    font-family: SweiGothicLegCJKtc-Thin;
+    src: url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff2) format("woff2")
+    , url(../font/swei-gothic-leg-master/WebFont/CJK%20TC/SweiGothicLegCJKtc-Light.woff) format("woff");
+  }
+
 /* font */
 
 html {
@@ -8,6 +45,7 @@ html {
 body {
     opacity: 0;
     transform: translateY(20px);
+    box-sizing: border-box;
 }
 
 /* title */
@@ -16,6 +54,19 @@ h1 {
     font-size: 35px;
     color:#fff;
 
+}
+.kamei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9D2929;
+}
+.kamei_line {
+    /* height: 2px; */
+    width: 50px;
+    border: solid 1px #9D2929;
+    margin: 0 10px;
+    border-radius: 10px;
 }
 
 /* subtitle */
@@ -29,8 +80,27 @@ h3 {
 }
 
 .h3-spring {
-    color:#A63030;
+    color:#9D2929;
 }
+.h3-spring.sub {
+    margin-top: -10px;
+    font-size: 14px;
+    word-spacing: 5px;
+}
+
+
+.intro {
+    /* font-family: 'Zen Maru Gothic', sans-serif; */
+    font-family: SweiGothicLegCJKtc-Medium;
+    /* font-weight: 500; */
+    font-size: 14px;
+    color: #472A18;
+    text-align: center;
+    margin-top: 100px;
+    /* text-align: justify; */
+    /* text-justify: auto; */
+}
+
 .h3-summer {
     color: #216c76;
 }
@@ -39,6 +109,15 @@ h3 {
 }
 .h3-winter {
     color: #572176;
+}
+
+h4 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 16px;
+    color:#9D2929;
+    font-weight: 700;
+    margin: 0;
+
 }
 
 p {
@@ -50,6 +129,7 @@ p {
 
     
 }
+
 
 /* 架構*/
 .container {
@@ -111,7 +191,7 @@ p {
 
 
 /* btn */
-.btn {
+/* .btn {
     position: fixed;
     
     width: 50px;
@@ -120,7 +200,7 @@ p {
     background-color: #fff;
     outline: solid 1px black;
 
-}
+} */
 .btn_back {
     top: 0;
     left: 0;
@@ -156,6 +236,45 @@ p {
     /* opacity: 80%; */
     filter: drop-shadow(0px 10px 5px rgba(147, 147, 147, 0.5));
 }
+.btn {
+    position: absolute;
+}
+.btn.left {
+    left: 30px;
+    padding-left: 50px;
+
+    margin: 0;
+    padding: 0;
+
+}
+.btn.right {
+    right: 30px;
+    padding-left: 50px;
+
+    margin: 0;
+    padding: 0;
+
+}
+.btn.close {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    padding-left: 50px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.btnimage {
+    width: 20px;
+    height: 40px;
+   
+}
+.btnimage.close {
+    width: 20px;
+    height: 20px;  
+}
+
 
 /* 內容 */
 /* 季節說明文字區塊 */
@@ -331,6 +450,7 @@ p {
 .image_wagashi_i6 {
     right: 0;
     float: right;
+    scale: 85%;
 }
 
 
@@ -341,33 +461,153 @@ p {
     transition: opacity 0.5s ease, transform 0.5s ease; /* 过渡属性和时长 */
 }
 
+.fade-out {
+    opacity: 0; /* 透明度从 1 变为 0，实现淡出效果 */
+    transform: translateY(20px); /* 同时向上平移一点，增加动画效果 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* 过渡属性和时长 */
+}
+
 
 
 
 
 /* popup */
 .popup {
-    /* display: none; */
     top: 0;
-    margin-top: 130px;
+    margin: 148px 0px; /*全螢幕比例問題*/
     left: 0;
     position: absolute;
     min-width: 100vw;
-    min-height: 400px;
+    min-height: 500px;
     outline: solid 1px red;
     filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
-    
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* opacity: 0; */
+    /* transform: translateY(20px); */
 
 }
+#popup_spring {
+    display: none;
+    /* opacity: 0; */
+}
+#look1 {
+    display: none;
+}
+#look2 {
+    display: none;
+}
+#look3 {
+    display: none;
+}
+#look4 {
+    display: none;
+}
+#look5 {
+    display: none;
+}
+#look6 {
+    display: none;
+}
+
+/* .look0 {
+    opacity: 1;
+} */
 
 .popup_spring {
     background-color: #9D2929;
+    /* display: none; */
 
 }
 
 .popup_contentarea {
-    margin-top: 25px;
+    padding: 0px 90px;
+    /* margin-top: 25px; */
     min-width: 100vw;
-    min-height: 350px;
+    min-height: 450px;
     background-color: #FFDEDE;
+    display: flex;
 }
+
+.popup_left {
+    height: 450px;
+    width: 40%;
+    /* outline: solid 1px blue; */
+    padding: 0;
+    text-align: center;
+    align-items: center;
+
+}
+
+.popup_img {
+    height: 250px;
+    filter: drop-shadow(5px 10px 5px rgba(119, 62, 34, 0.5));
+
+}
+
+.popup_right {
+    height: 450px;
+    width: 60%;
+    /* outline: solid 1px blue; */
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.rightarea_content {
+    display: flex;
+    height: 130px;
+    width: auto;
+    /* outline: solid 1px red; */
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+
+}
+.rightarea_content.tipsarea {
+    height: 187px;
+    /* outline: solid 1px red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.rightarea_title {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    color: #6B1A1A;
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+}
+.intro.content {
+    
+    margin:  auto 30px;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 28px;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+.intro.tips_content {
+    margin: 10px 0;
+}
+
+.kamei_line.underrightareacontent {
+    width: auto;
+    margin: 0 0px;
+}
+.tips {
+    text-align-last: left;
+    margin: 0 30px;
+    padding: 10px 0;
+}
+.tips_content {
+    text-align: left;
+    
+}
+

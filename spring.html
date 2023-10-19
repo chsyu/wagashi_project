@@ -6,6 +6,7 @@
     <title>spring</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/season.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.com/libraries/bodymovin"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
@@ -13,7 +14,7 @@
 </head>
 <body>
     <div class="container container-spring">
-        <div class="btn btn_back">返回箭頭</div>
+        <div class="btn btn_back" id="btn_back" onclick="navigateToMainPage()" target="_blank">返回箭頭</div>
         <div class="btn btn_hamburger">選單漢堡</div>        
             <div class="content-area content-area-spring">
                 <div class="introduction-area">
@@ -26,16 +27,17 @@
             </div>
             <div class="wagashi-area">
                 <div class="wagashi-area_line1">
-                    <img src="image/spring/s1.png" alt="" class="image_wagashi_spring image_wagashi_i1" data-popup-id="popup1">
-                    <img src="image/spring/s2.png" alt="" class="image_wagashi_spring image_wagashi_i2">
+                    <img src="image/spring/s1.png" alt="" class="image_wagashi_spring image_wagashi_i1" id="wagashi1">
+                    <img src="image/spring/s2.png" alt="" class="image_wagashi_spring image_wagashi_i2" id="wagashi2">
                 </div>
                 <div class="wagashi-area_line2"> <!--包含和菓子與說明文字在同一行-->
-                    <img src="image/spring/s3.png" alt="" class="image_wagashi_spring image_wagashi_i3">
-                    <img src="image/spring/s4.png" alt="" class="image_wagashi_spring image_wagashi_i4">
+                    <img src="image/spring/s3.png" alt="" class="image_wagashi_spring image_wagashi_i3" id="wagashi3">
+                    <img src="image/spring/s4.png" alt="" class="image_wagashi_spring image_wagashi_i4" 
+                    id="wagashi4">
                 </div>
                 <div class="wagashi-area_line3">
-                    <img src="image/spring/s5.png" alt="" class="image_wagashi_spring image_wagashi_i5">
-                    <img src="image/spring/s6.png" alt="" class="image_wagashi_spring image_wagashi_i6">
+                    <img src="image/spring/s5.png" alt="" class="image_wagashi_spring image_wagashi_i5" id="wagashi5">
+                    <img src="image/spring/s6.png" alt="" class="image_wagashi_spring image_wagashi_i6" id="wagashi6">
                 </div> 
             </div>
         </div>
@@ -44,13 +46,249 @@
     </div>    
 
     <!--popup-->
-    <div class="popup popup_spring">
-        <div class="popup_contentarea" id="wagashi_introduction1">
-            
+    <div class="popup popup_spring" id="popup_spring">
+        <div class="btn left" id="btn_left">
+            <img src="./image/btn-left.png" alt="" class="btnimage">
+        </div>
+         <!--第一個內容-->
+        <div class="popup_contentarea" id="look1">
+           <div class="popup_left">
+                <img src="image/spring/s1.png" alt="" class="popup_img">
+                <div class="kamei">
+                    <div class="kamei_line"></div>
+                    <h1 class="kamei">うぐいす</h1>
+                    <div class="kamei_line"></div>
+                </div>
+                <h3 class="h3-spring sub">u gu i su</h3>
+                <p class="intro">以被稱為「春告鳥」的鳥兒「鶯」命名。<br>翠綠的色澤象徵新芽的生長、春天的到來。<br>將紅豆沙包入麻糬中，並灑上青大豆粉裝飾。</p>
+                <!-- text-align:justify 沒反應 -->
+           </div> 
+           <div class="popup_right">
+                <div class="rightarea_content">
+                    <h3 class="h3-spring rightarea_title">立春</h3>
+                    <div class="intro content">春日之始、<br>「陽和豈蟄 品物皆春」、<br>萬物復甦、生機蓬發、一年四季由此開始。</div>
+                </div>
+                <div class="kamei_line underrightareacontent"></div>
+                <div class="rightarea_content">
+                    <h3 class="h3-spring rightarea_title">材料</h3>
+                    <div class="intro content">紅豆餡或紅豆泥、求肥、青大豆粉</div>
+                </div>
+                <div class="kamei_line underrightareacontent"></div>
+                <div class="rightarea_content tipsarea">
+                    <div class="rightarea_content">
+                        <h3 class="h3-spring rightarea_title">小知識</h3>
+                        <div class="tips">
+                            <h4>うぐいす是誰命名的?</h4>
+                            <div class="intro tips_content">當時菊屋治兵衛受到豐臣秀吉之弟—豐臣秀長的命令，要為茶會製作一種獨特的點心。他獻上用糯米包裹著粒狀衛狀紅豆餡，並撒上黃豆粉的點心，豐臣秀吉非常喜歡，並賜予它「鶯餅」的名號。</div>
+                        </div>
+                        
+                    </div>
+                </div>
+           </div>
 
 
         </div>
+         <!--第二個內容-->
+        <div class="popup_contentarea" id="look2">
+            <div class="popup_left">
+                 <img src="image/spring/s2.png" alt="" class="popup_img">
+                 <div class="kamei">
+                     <div class="kamei_line"></div>
+                     <h1 class="kamei">桜餅</h1>
+                     <div class="kamei_line"></div>
+                 </div>
+                 <h3 class="h3-spring sub">sakura mochi</h3>
+                 <p class="intro">用鹽漬櫻花葉包裹的粉色和菓子，同時作為春天的季語被廣為人知。<br>是個不論外觀與味道都讓人感覺到春天的風雅菓子。</p>
+                 
+            </div> 
+            <div class="popup_right">
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">啓蟄</h3>
+                     <div class="intro content">天氣回暖、<br>春雷始鳴、<br>驚起蟄伏過冬的動物。</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">材料</h3>
+                     <div class="intro content">鹽漬櫻葉、鹽漬櫻花、豆沙、道明寺粉/麵粉</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content tipsarea">
+                     <div class="rightarea_content">
+                         <h3 class="h3-spring rightarea_title">小知識</h3>
+                         <div class="tips">
+                             <h4>桜餅有兩種?</h4>
+                             <div class="intro tips_content">櫻餅分成關東的長命寺櫻餅以及關西的道明寺櫻餅兩大主流。長命寺櫻餅是用麵粉為主的餅皮，但以往也曾用過糯米粉或是葛粉。道明寺櫻餅則不用麵粉，而是用道明寺粉，雖名為粉，但仍保有糯米粒的樣子與口感。</div>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </div>
+ 
+ 
+         </div>
 
+          <!--第三個內容-->
+        <div class="popup_contentarea" id="look3">
+            <div class="popup_left">
+                 <img src="image/spring/s4.png" alt="" class="popup_img">
+                 <div class="kamei">
+                     <div class="kamei_line"></div>
+                     <h1 class="kamei">椿</h1>
+                     <div class="kamei_line"></div>
+                 </div>
+                 <h3 class="h3-spring sub">tsubaki</h3>
+                 <p class="intro">用練切形塑出椿花綻放的造型。<br>椿花又被稱為「茶花的女王」，主要綻放於11月～4月，<br>也有特殊的品種會與櫻花一同綻放。</p>
+                 
+            </div> 
+            <div class="popup_right">
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">穀雨</h3>
+                     <div class="intro content">春日告終、<br>穀雨終霜、<br>春雨綿綿象徵氣溫漸暖。</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">材料</h3>
+                     <div class="intro content">練切・紅豆泥(こしあん)</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content tipsarea">
+                     <div class="rightarea_content">
+                         <h3 class="h3-spring rightarea_title">小知識</h3>
+                         <div class="tips">
+                             <h4>こしあん(ko shi ann)與粒あん(tsubu ann)</h4>
+                             <div class="intro tips_content">日本常見的紅豆餡分為「こしあん」と「粒あん」，可以理解為泥狀與顆粒狀的紅豆餡。「こしあん」是綿密的豆沙口感，而「粒あん」則保有豆類的顆粒口感。</div>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </div>
+ 
+ 
+         </div>
+
+           <!--第四個內容-->
+        <div class="popup_contentarea" id="look4">
+            <div class="popup_left">
+                 <img src="image/spring/s6.png" alt="" class="popup_img">
+                 <div class="kamei">
+                     <div class="kamei_line"></div>
+                     <h1 class="kamei">しだれ桜</h1>
+                     <div class="kamei_line"></div>
+                 </div>
+                 <h3 class="h3-spring sub">shi da re sakura</h3>
+                 <p class="intro">運用白、粉、綠的經典春季配色<br>呈現「一重白彼岸枝垂桜」的感覺，<br>並再現了花瓣的濕潤感。</p>
+                 
+            </div> 
+            <div class="popup_right">
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">清明</h3>
+                     <div class="intro content">萬物潔淨、<br>空氣清新、<br>風景明麗的環境中花草樹木欣欣向榮。</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">材料</h3>
+                     <div class="intro content">外郎糕（ういろう）・白豆沙</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content tipsarea">
+                     <div class="rightarea_content">
+                         <h3 class="h3-spring rightarea_title">小知識</h3>
+                         <div class="tips">
+                             <h4>什麼是外郎糕?</h4>
+                             <div class="intro tips_content">是使用米粉及黑砂糖等原料蒸出來的糕點，帶著純樸的甜味及彈牙的口感。據說誕生於室町時代，是歷史最古老的一種和菓子，數百年來代代受人喜愛。</div>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </div>
+ 
+ 
+         </div>
+
+           <!--第五個內容-->
+        <div class="popup_contentarea" id="look5">
+            <div class="popup_left">
+                 <img src="image/spring/s5.png" alt="" class="popup_img">
+                 <div class="kamei">
+                     <div class="kamei_line"></div>
+                     <h1 class="kamei">菜の花</h1>
+                     <div class="kamei_line"></div>
+                 </div>
+                 <h3 class="h3-spring sub">na no hana</h3>
+                 <p class="intro">包裹著順滑的抹茶豆沙餡，用春天色調製成的「きんとん」，<br>表現出一片田野上油菜花爭相綻放的場景。</p>
+                 
+            </div> 
+            <div class="popup_right">
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">雨水</h3>
+                     <div class="intro content">山水融盡、<br>草木萌動、<br>百草與樹木嫩芽始見之時。</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">材料</h3>
+                     <div class="intro content">白豆沙、求肥、抹茶豆沙</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content tipsarea">
+                     <div class="rightarea_content">
+                         <h3 class="h3-spring rightarea_title">小知識</h3>
+                         <div class="tips">
+                             <h4>什麼是「きんとん(ki n to n)」</h4>
+                             <div class="intro tips_content">它是一種和菓子造型的名稱。將豆沙泥搗碎和過篩後製成小小的芯，並裝飾於求肥或練切製成的基底上。</div>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </div>
+ 
+ 
+         </div>
+
+           <!--第六個內容-->
+        <div class="popup_contentarea" id="look6">
+            <div class="popup_left">
+                 <img src="image/spring/s3.png" alt="" class="popup_img">
+                 <div class="kamei">
+                     <div class="kamei_line"></div>
+                     <h1 class="kamei">初桜</h1>
+                     <div class="kamei_line"></div>
+                 </div>
+                 <h3 class="h3-spring sub">hatsu zakura</h3>
+                 <p class="intro">以櫻粉色的練切形塑出一年中首次綻放的櫻花，<br>櫻花盛綻時，也是新旅程開始的季節。</p>
+                 
+            </div> 
+            <div class="popup_right">
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">春分</h3>
+                     <div class="intro content">晝夜均分、<br>春季過半、<br>漸變的天氣中櫻花始綻。</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content">
+                     <h3 class="h3-spring rightarea_title">材料</h3>
+                     <div class="intro content">練切・紅豆泥</div>
+                 </div>
+                 <div class="kamei_line underrightareacontent"></div>
+                 <div class="rightarea_content tipsarea">
+                     <div class="rightarea_content">
+                         <h3 class="h3-spring rightarea_title">小知識</h3>
+                         <div class="tips">
+                             <h4>櫻花可以用來做什麼?</h4>
+                             <div class="intro tips_content">鹽漬櫻花是最常見的櫻花製品，用鹽巴和梅醋將花瓣醃漬製而成。適合鹽漬的櫻花是已開了七到八成，含苞待放的櫻花。因此必須在櫻花滿開前一周進行準備，是十分考驗氣候的工程。</div>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </div>
+ 
+ 
+         </div>
+
+        <div class="btn right" id="btn_right">
+            <img src="./image/btn-right.png" alt="" class="btnimage">
+        </div>
+        <div class="btn close" id="btn_close">
+            <img src="./image/close(red).png" alt="" class="btnimage close">
+        </div>
     </div>
         
           

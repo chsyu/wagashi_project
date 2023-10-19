@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 
 h1 {
     font-size: 50px;
@@ -402,6 +407,11 @@ a:active {
 
 
 /* 動畫 */
+.fade-in {
+    opacity: 1; /* 透明度从 1 变为 0，实现淡出效果 */
+    transform: translateY(0px); /* 同时向上平移一点，增加动画效果 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* 过渡属性和时长 */
+}
 .fade-out {
     opacity: 0; /* 透明度从 1 变为 0，实现淡出效果 */
     transform: translateY(20px); /* 同时向上平移一点，增加动画效果 */
