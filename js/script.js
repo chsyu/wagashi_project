@@ -134,9 +134,9 @@ $('#winter').on('mouseenter',function () {
 });
 
 // menu animation
-let menu_windowcontent = document.querySelector('#menu_windowcontent');
-let menubottomrect = document.querySelector('#menubottomrect');
-let menutoprect = document.querySelector('#menutoprect');
+let menu_windowcontent = document.querySelector("#menu_windowcontent");
+let menubottomrect = document.querySelector("#menubottomrect");
+let menutoprect = document.querySelector("#menutoprect");
 // let link1 = document.querySelector('#link1');
 // let link2 = document.querySelector('#link2');
 // let link3 = document.querySelector('#link3');
@@ -144,10 +144,16 @@ let menutoprect = document.querySelector('#menutoprect');
 let clickstate = 0;
 menubottomrect.onclick = function(){
     if(clickstate == 0) {
-        gsap.fromTo("#menubottomrect",1,{y:0},{y:400});
+        let t1=gsap.timeline();
+        t1.fromTo("#menubottomrect",1,{y:0},{y:400});
+        t1.fromTo(".menu_windowcontent", 1, {className:"menu_windowcontent"},{className: "+=active"});
+        t1.play();
+        // gsap.fromTo("#menubottomrect",1,{y:0},{y:400});
+        // gsap.to(".menu_windowcontent", 0.5, {className: "+=active"});
         clickstate = 1; 
     }else{
         gsap.fromTo("#menubottomrect",1,{y:400},{y:0});
+        gsap.fromTo("#menu_windowcontent",1,{height:300},{height:0});
         clickstate = 0; 
     }
     // if(menu_windowcontent.style.display=='none'){
@@ -161,9 +167,11 @@ menubottomrect.onclick = function(){
 menutoprect.onclick = function(){
     if(clickstate == 0) {
         gsap.fromTo("#menubottomrect",1,{y:0},{y:400});
+        // gasp.fromTo("#menu_windowcontent",1,{height:0},{height:300});
         clickstate = 1; 
     }else{
         gsap.fromTo("#menubottomrect",1,{y:400},{y:0});
+        // gasp.fromTo("#menu_windowcontent",1,{height:300},{height:0});
         clickstate = 0; 
     }
     // if(menu_windowcontent.style.display=='none'){

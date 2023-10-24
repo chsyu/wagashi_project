@@ -46,12 +46,13 @@ body {
     opacity: 0;
     transform: translateY(20px);
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* title */
 h1 {
     font-family: 'Zen Maru Gothic', sans-serif;
-    font-size: 35px;
+    font-size: 2rem;
     color:#fff;
 
 }
@@ -73,7 +74,7 @@ h1 {
 h3 {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.4rem;
     
 
 
@@ -84,7 +85,7 @@ h3 {
 }
 .h3-spring.sub {
     margin-top: -10px;
-    font-size: 14px;
+    font-size: 1rem;
     word-spacing: 5px;
 }
 
@@ -93,7 +94,7 @@ h3 {
     /* font-family: 'Zen Maru Gothic', sans-serif; */
     font-family: SweiGothicLegCJKtc-Medium;
     /* font-weight: 500; */
-    font-size: 14px;
+    font-size: 1rem;
     color: #472A18;
     text-align: center;
     margin-top: 100px;
@@ -113,7 +114,7 @@ h3 {
 
 h4 {
     font-family: 'Zen Maru Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 1.2rem;
     color:#9D2929;
     font-weight: 700;
     margin: 0;
@@ -121,10 +122,13 @@ h4 {
 }
 
 p {
-    font-size: 10px;
-    line-height: 10px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
     display: inline;
     justify-content: center;
+    text-align: justify;
     /* border: solid 1px black; */
 
     
@@ -299,13 +303,10 @@ p {
     color: #472A18;
     background-color: rgba(249,248,227,0.8);
     border-radius: 20px;
-    padding:5px;
-    padding-bottom: 8px;
+    padding:20px;
+    /* padding-bottom: 8px; */
     display: inline-block;
-    /* justify-content: center;
-    align-items: center; */
     
-    /* flex-direction: column; */
     
     
 
@@ -473,19 +474,20 @@ p {
 
 /* popup */
 .popup {
-    top: 0;
-    margin: 148px 0px; /*全螢幕比例問題*/
+    top: 20%;
+    /* margin: 148px 0px;  */
+    /*全螢幕比例問題*/
     left: 0;
     position: absolute;
-    min-width: 100vw;
+    width: 100vw;
     min-height: 500px;
     /* outline: solid 1px red; */
     filter: drop-shadow(5px 10px 5px rgba(171, 76, 76, 0.5));
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    overflow: hidden;
+    justify-content: center;
     /* opacity: 0; */
-    /* transform: translateY(20px); */
 
 }
 #popup_spring {
@@ -522,10 +524,20 @@ p {
 }
 
 .popup_contentarea {
+    outline: solid 1px blue;
     padding: 0px 90px;
     /* margin-top: 25px; */
-    min-width: 100vw;
+    width: 100vw;
     min-height: 450px;
+    background-color: #FFDEDE;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.popup_formove {
+    padding: 0;
+    width: auto;
+    height: auto;
     background-color: #FFDEDE;
     display: flex;
 }
@@ -591,6 +603,7 @@ p {
     line-height: 28px;
     /* align-items: center; */
     /* justify-content: center; */
+    
 
 }
 .intro.tips_content {

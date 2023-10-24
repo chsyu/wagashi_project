@@ -139,22 +139,17 @@ h6 {
     /* height: 500px; */
     /* margin: 20px 0px; */
     padding: 20px 0px;
-    height: 300px;
+    width: 150px;
+    height: 0;
     /* outline: solid 1px blue; */
-    /* background-color: #fff; */
-    /* display: inline; */
-    /* flex: 1; */
-    /* padding-top: 50px; */
-    /* padding-bottom: 150px; */
-    /* visibility: collapse; */
-    /* display: none; */
     display: block;
-    transition: all 5s ease-in;
-    
-    
-
-    
+    /* transition: all 5s ease-in; */
+    overflow: hidden;
 } 
+.menu_windowcontent.active {
+    height: 300px;
+    
+}
 
 
 
@@ -163,8 +158,10 @@ h6 {
     width: 150px;
     margin: 0;
     top: 20px;
-    height: 400px;
-    background-color: #ece8d8;
+    height: 35px;
+    background-color: rgba(236, 233, 217,1);
+
+   
 
 }
 
@@ -182,9 +179,22 @@ h6 {
     line-height: 60px;
     /* outline: solid 1px red; */
     text-align: center;
+    overflow: hidden;
     /* display: none; */
 
 }
+/* #link1 {
+    display: none;
+}
+#link2 {
+    display: none;
+}
+#link3 {
+    display: none;
+}
+#link4 {
+    display: none;
+} */
 
 /* 連結還要另外寫js控制當在哪個頁面時，要保持被選取的樣式 */
 a:link {
