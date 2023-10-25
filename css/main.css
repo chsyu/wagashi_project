@@ -141,9 +141,9 @@ h6 {
     /* margin: 20px 0px; */
     padding: 20px 0px;
     width: 150px;
-    height: 0;
+    /* height: 0; */
     /* outline: solid 1px blue; */
-    display: block;
+    display: none;
     /* transition: all 5s ease-in; */
     overflow: hidden;
 } 
@@ -159,7 +159,6 @@ h6 {
     width: 150px;
     margin: 0;
     top: 20px;
-    height: 35px;
     background-color: rgba(236, 233, 217,1);
 
    
