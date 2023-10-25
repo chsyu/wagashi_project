@@ -148,7 +148,9 @@ p {
     
 }
 .container-spring {
-    background-color: #fdaeb1;
+    /* background-color: #fdaeb1; */
+    background-image: url(../image/春背景.png);
+    background-size: cover;
 }
 .container-summer {
     background-color: #aee3db;
@@ -171,14 +173,13 @@ p {
     align-items: center;
     justify-content: center;
     display: flex;
-    
-    outline: solid 1px black;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .content-area-spring {
-    background-color: #ea9396;
+    background-color: rgba(234, 147, 150,0.8);
+    
 }
 
 .content-area-summer {
@@ -301,7 +302,7 @@ p {
     text-align: center;
     vertical-align: middle;
     color: #472A18;
-    background-color: rgba(249,248,227,0.8);
+    background-color: rgba(249,248,227,0.7);
     border-radius: 20px;
     padding:20px;
     /* padding-bottom: 8px; */
